@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:libres/main.dart';
-//import 'package:libres/planner.dart';
+import 'package:libres/planner.dart';
 
 class LoginTab extends StatelessWidget {
   @override
@@ -70,17 +70,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            //FlatButton(
-            //  onPressed: () {
-            //    Navigator.push(
-            //      context,
-            //      MaterialPageRoute(builder: (context) => planner()),
-            //    );
+            FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => planner()),
+                );
 
-            //    signIn(emailcontroller.text, passwordcontroller.text);
-            //  },
-            //  child: Text('LOGIN'),
-            //),
+                signIn(emailcontroller.text, passwordcontroller.text);
+              },
+              child: Text('LOGIN'),
+            ),
             FlatButton(
               onPressed: () {
                 Navigator.push(
